@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Pesquisa de Aluno</title>
+		<link rel="stylesheet" type="text/css" href="../css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="../images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a href="dadosAluno.html">Novo Aluno</a><br/>
+					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br/>
+					<a href="controleDeAcesso.html">Controle de Acesso</a><br/>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br/>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+		
+		<h1>Pesquisa de Aluno</h1>
+		
+		<div id="infoMessage">
+			[ Mensagens de erros do Sistema ]
+		</div>
+		
+		<br/>
+		
+		<form>
+			<fieldset>
+				<legend>Parâmetros da Pesquisa</legend>
+				
+				<label for="id">ID</label><br/>
+				<input id="id" type="text" name="id"/><br/>
+				
+				<label for="nome">Nome</label><br/>
+				<input id="nome" type="text" name="nome"/><br/>
+				
+				<label for="rg">RG</label><br/>
+				<input id="rg" type="text" name="rg"/><br/>
+				
+				<label for="telefoneDDD">Telefone</label><br/>
+				<input id="telefoneDDD" type="tel" name="telefoneDDD"/>
+				<input id="telefoneNumero" type="tel" name="telefoneNumero"/>
+	
+			</fieldset>
+			
+			<br/>
+			
+			<input id="pesquisar" type="submit" value="Pesquisar" />
+		</form>
+		
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>RG</th>
+				<th>E-mail</th>
+				<th>Situação</th>
+				<th>Ações</th>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>Pedro Santos</td>
+				<td>1282737</td>
+				<td>santos@mail.com</td>
+				<td>Ativo</td>
+				<td>
+					<input type="button" value="Editar" />
+					<input type="button" value="Excluir" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>2</td>
+				<td>Maria Sá</td>
+				<td>0575556</td>
+				<td>sama@mail.com</td>
+				<td>Pendente</td>
+				<td>
+					<input type="button" value="Editar" />
+					<input type="button" value="Excluir" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>3</td>
+				<td>Caio Castro</td>
+				<td>96867676</td>
+				<td>caca@mail.com</td>
+				<td>Inativo</td>
+				<td>
+					<input type="button" value="Editar" />
+					<input type="button" value="Excluir" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>4</td>
+				<td>Marta Rocha</td>
+				<td>1235778</td>
+				<td>martacha@mail.com</td>
+				<td>Ativo</td>
+				<td>
+					<input type="button" value="Editar" />
+					<input type="button" value="Excluir" />
+				</td>
+			</tr>
+		</table>
+
+</body>
+</html>

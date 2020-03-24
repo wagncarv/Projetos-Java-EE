@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Controle de Acesso</title>
+		<link rel="stylesheet" type="text/css" href="../css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="../images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a href="dadosAluno.html">Novo Aluno</a><br/>
+					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br/>
+					<a href="controleDeAcesso">Controle de Acesso</a><br/>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br/>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+		
+		<h1>Controle de Acesso</h1>
+		
+			<div id="infoMessage">
+			[ Mensagens de erros do Sistema ]
+		</div>
+		
+		<br/>
+		
+		<form>
+			<fieldset>
+				<legend>Parâmetros de Acesso</legend>
+				
+				<label for="id">ID</label><br/>
+				<input id="id" type="text" name="id"/><br/>
+				
+				<label for="rg">RG</label><br/>
+				<input id="rg" type="text" name="rg"/><br/>
+	
+			</fieldset>
+			
+			<br/>
+			
+			<input id="registrarAcesso" type="submit" value="Registrar acesso" />
+		</form>
+	
+	</body>
+</html>

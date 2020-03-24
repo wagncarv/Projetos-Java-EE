@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Dados do Aluno</title>
+		<link rel="stylesheet" type="text/css" href="../css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+			
+		
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="../images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a href="dadosAluno.html">Novo Aluno</a><br/>
+					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br/>
+					<a href="controleDeAcesso">Controle de Acesso</a><br/>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br/>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+		
+		<h1>Novo Aluno</h1>
+		
+		<div id="infoMessage">
+			[ Mensagem de erro do sistema ]
+		</div>
+	
+		<br/>
+		
+		<form>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				
+				<label for="nome">Nome</label><br/>
+				<input id="nome" type="text" name="nome"/><br/>
+				
+				<label for="sexo">Sexo</label><br/>
+				<select id="sexo" name="sexo">
+					<option>Masculino</option>
+					<option>Feminino</option>
+				</select><br/>
+				
+				<label for="rg">RG</label><br/>
+				<input id="rg" type="text" name="rg"/><br/>
+				
+				<label for="dataDeNascimento">Data de Nascimento</label><br/>
+				<input id="dataDeNascimento" type="text" name="dataDeNascimento"/><br/>
+			</fieldset>
+		</form>
+		
+		<br/>
+
+		<form>
+			<fieldset>
+				<legend>Situação</legend>
+
+			<label for="situacao">Situação</label><br /> 
+			<select id="situacao" name="situacao">
+				<option>Ativo</option>
+				<option>Inativo</option>
+				<option>Pendente</option>
+			</select><br />
+
+		</fieldset>
+		</form>
+	
+		<br />
+	
+		<form>
+			<fieldset>
+				<legend>Endereço</legend>
+
+			<label for="rua">Rua</label><br /> 
+			<input id="rua" type="text" name="rua" /><br />
+			
+			<label for="numero">Número</label><br /> 
+			<input id="numero" type="text" name="numero" /><br />
+			
+			<label for="complemento">Complemento</label><br /> 
+			<input id="complemento" type="text" name="complemento" /><br />
+			
+			<label for="cidade">Cidade</label><br /> 
+			<input id="cidade" type="text" name="cidade" /><br />
+			
+			<label for="estado">Estado</label><br /> 
+			<select id="estado" name="estado">
+				<option>Minas Gerais</option>
+				<option>Paraná</option>
+				<option>São Paulo</option>
+			</select><br />
+			
+			<label for="cep">CEP</label><br /> 
+			<input id="cep" type="text" name="cep" /><br />
+
+		</fieldset>
+		</form>
+	
+		<br />
+
+		<form>
+			<fieldset>
+				<legend>Contato</legend>
+				
+				<label for="email">E-mail</label><br/>
+				<input id="email" type="email" name="email"/><br/>
+				
+				<label for="telefoneCelularDDD">Telefone Celular</label><br/>
+				<input id="telefoneCelularDDD" type="tel" name="telefoneCelularDDD"/>
+				<input id="telefoneCelularNumero" type="tel" name="telefoneCelularNumero"/><br/>
+				
+				<label for="telefoneFixoDDD">Telefone Fixo</label><br/>
+				<input id="telefoneFixoDDD" type="tel" name="telefoneFixoDDD"/>
+				<input id="telefoneFixoNumero" type="tel" name="telefoneFixoNumero"/>
+			</fieldset>
+			
+			<br />
+		
+			<input id="gravar" type="submit" value="Gravar" />
+			<input id="relatoriosDeAcessos" type="button" value="Relatórios de acessos" />
+		</form>
+	
+		
+
+</body>
+</html>

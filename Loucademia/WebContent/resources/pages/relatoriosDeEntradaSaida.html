@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Relatórios de Entradas e Saídas</title>
+		<link rel="stylesheet" type="text/css" href="../css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="../images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a href="dadosAluno.html">Novo Aluno</a><br/>
+					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br/>
+					<a href="controleDeAcesso">Controle de Acesso</a><br/>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br/>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+		
+		<h1>Relatórios de Entradas e Saídas</h1>
+		
+				<div id="infoMessage">
+			[ Mensagens de erros do Sistema ]
+		</div>
+		
+		<br/>
+		
+		<form>
+			<fieldset>
+				<legend>Parâmetros da Pesquisa</legend>
+				
+				<label for="id">ID</label><br/>
+				<input id="id" type="text" name="id"/><br/>
+				
+				<label for="dataInicial">Data Inicial</label><br/>
+				<input id="dataInicial" type="date" name="dataInicial"/><br/>
+				
+				<label for="dataFinal">Data Final</label><br/>
+				<input id="dataFinal" type="date" name="dataFinal"/><br/>
+	
+			</fieldset>
+			
+			<br/>
+			
+			<input id="gerarRelatorio" type="submit" value="Gerar relatório" />
+		</form>
+		
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Entrada</th>
+				<th>Saída</th>
+				<th>Duração</th>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>Pedro Santos</td>
+				<td>04/03/2020 09:00:00</td>
+				<td>04/03/2020 10:00:00</td>
+				<td>01:00:00</td>
+			</tr>
+	
+			<tr>
+				<td>2</td>
+				<td>Maria Sá</td>
+				<td>08/03/2020 10:00:00</td>
+				<td>08/03/2020 11:00:00</td>
+				<td>01:00:00</td>
+			</tr>
+	
+			<tr>
+				<td>3</td>
+				<td>Caio Castro</td>
+				<td>09/03/2020 10:00:00</td>
+				<td>09/03/2020 11:00:00</td>
+				<td>01:00:00</td>
+			</tr>
+	
+			<tr>
+				<td>4</td>
+				<td>Marta Rocha</td>
+				<td>10/03/2020 09:00:00</td>
+				<td>10/03/2020 10:00:00</td>
+				<td>01:00:00</td>
+			</tr>
+		</table>
+	</body>
+	
+</html>

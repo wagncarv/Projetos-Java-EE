@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+	<head jsf:id="head">
+		<meta charset="ISO-8859-1" />
+		<title>Dados do Aluno</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/Loucademia_Estilo.css" /> 
+	</head>
+	<body>
+		<!-- CABEÇALHO - INÍCIO -->
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="resources/images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a jsf:outcome="dadosAluno">Novo Aluno</a><br/>
+					<a jsf:outcome="pesquisaDeAluno?clear=true">Pesquisa de Aluno</a><br/>
+					<a jsf:outcome="controleDeAcesso">Controle de Acesso</a><br/>
+					<a jsf:outcome="relatoriosDeEntradaSaida">Relatórios de Entradas e Saídas</a><br/>
+					<a jsf:outcome="relatoriosDeSituacoes?clear=true">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+		<!-- CABEÇALHO - FIM -->
+				
+		<h1>#{title}</h1>
+		
+			<h:panelGroup rendered="#{!facesContext.messageList.isEmpty()}">
+				<div id="infoMessage">
+					<h:messages />
+				</div>
+			</h:panelGroup>
+		
+		<br/>
+		
+		<ui:insert name="conteudo"/>	
+		
+	<!-- RODAPÉ - INÍCIO -->
+	</body>
+</html>
+<!-- RODAPÉ - FIM -->

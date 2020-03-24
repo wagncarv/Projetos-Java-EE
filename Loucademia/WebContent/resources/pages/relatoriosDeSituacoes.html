@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Relatórios de Situações</title>
+		<link rel="stylesheet" type="text/css" href="../css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img id="logo" alt="Logo Loucademia" src="../images/Loucademia_Logotipo.png"/>
+			<nav>
+				<div>
+					<a href="dadosAluno.html">Novo Aluno</a><br/>
+					<a href="pesquisaDeAluno.html">Pesquisa de Aluno</a><br/>
+					<a href="controleDeAcesso">Controle de Acesso</a><br/>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br/>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br/>
+				</div>
+			</nav>
+		</header>
+	
+		<h1>Relatórios de Situações</h1>
+		
+		<div id="infoMessage">
+			[ Mensagens de erros do Sistema ]
+		</div>
+		
+		<br/>
+	
+		<form>
+			<fieldset>
+				<legend>Situação</legend>
+	
+				<label for="situacao">Situação</label><br /> <select id="situacao"
+					name="situacao">
+					<option>Ativo</option>
+					<option>Inativo</option>
+					<option>Pendente</option>
+				</select><br />
+	
+			</fieldset>
+			
+			<br/>
+			
+			<input type="submit" value="Gerar relatório"/>
+		</form>
+		
+	
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Situação</th>
+				<th>Celular</th>
+				<th>Fixo</th>
+				<th>Ações</th>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>Pedro Santos</td>
+				<td>Ativo</td>
+				<td>393748484</td>
+				<td>3456567777</td>
+				<td>
+					<input type="button" value="Editar" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>2</td>
+				<td>Maria Sá</td>
+				<td>Ativo</td>
+				<td>888888888</td>
+				<td>77777777</td>
+				<td>
+					<input type="button" value="Editar" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>3</td>
+				<td>Caio Castro</td>
+				<td>Ativo</td>
+				<td>656565656</td>
+				<td>11111111</td>
+				<td>
+					<input type="button" value="Editar" />
+				</td>
+			</tr>
+	
+			<tr>
+				<td>4</td>
+				<td>Marta Rocha</td>
+				<td>Ativo</td>
+				<td>987700988</td>
+				<td>33333333</td>
+				<td>
+					<input type="button" value="Editar" />
+				</td>
+			</tr>
+		</table>
+	
+</body>
+</html>
